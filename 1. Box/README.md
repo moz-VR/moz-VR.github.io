@@ -1,2 +1,2 @@
-To view this scene, follow this link:  moz-VR.github.io/1.box/index.html
+To view this scene, follow this link:  moz-vr.github.io/1. Box/index.html
 
