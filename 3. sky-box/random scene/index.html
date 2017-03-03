@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<script src="aframe.min.js"></script>
+
+	</head>
+
+	<body>
+
+		<a-assets>
+			<img id="moz" src="logo.jpg">
+		</a-assets>
+		<a-scene>
+			<a-box src="#moz" width="2" height="1" depth="2" position="1 2 1" rotation="45 45 45" scale=" 1 2.5 1"> 
+				<a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"> </a-animation>
+				<a-event name="mousecenter" scale=" 4 10 6"></a-event> 
+			</a-box>
+
+			<a-camera position="0 7 5">
+				<a-cursor color="#FF0000" />
+			</a-camera>
+
+			<a-sky src="webvr.jpeg"></a-sky>
+		</a-scene>
+
+
+	</body>
+</html>

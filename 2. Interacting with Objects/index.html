@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+		<a-assets>
+		    <img id="texture" src="img/texture.jpg">
+		    <img id="tex" src="img/te.jpeg">
+		 </a-assets> 
+	
+	<!-- Basic box -->
+            <a-cylinder id="one" color="#FFF000" radius="1" height="2" position="-4 2.5 -2"> </a-cylinder>
+
+	<!--Adding attributes --> <!-- Adding texture --> <!-- Animation fade in -->
+	    <a-box id="two" color="#FFFFFF" width="1" height="" depth="1" 
+                   position="0 2.5 -2"
+                   rotation="45 45 45"
+                   scale="1 2.5 1"
+		   src="#texture"> 
+	    <a-animation attribute="material.color" begin="click" from="white" to="red" dur="3000"></a-animation>
+	     </a-box>
+
+	<!-- Applying animation to the sphere -->
+	    <a-sphere color="#FFFFF0" radius="1" position="4 2.5 -1" src="#tex">
+       	    <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation></a-sphere>
+
+	<!-- Interacting with objects -->
+	<a-event name="mouseenter" scale="2 1 6"></a-event>
+            </a-box>
+            
+            <a-camera position="0 3 4">
+                <a-cursor color="#FF0000">
+            </a-camera>
+
+     </a-scene>
+    </body>
+</html>
