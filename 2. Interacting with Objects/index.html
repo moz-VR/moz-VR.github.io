@@ -22,9 +22,15 @@
 	    <a-animation attribute="material.color" begin="click" from="white" to="red" dur="3000"></a-animation>
 	     </a-box>
 
+	<!-- Added torus knot-->
+
+	<a-torus-knot color="#B84A39" arc="180" p="2" q="7" radius="4" position= "0 0 -11" radius-tubular="0.1"></a-torus-knot>
+
 	<!-- Applying animation to the sphere -->
-	    <a-sphere color="#FFFFF0" radius="1" position="4 2.5 -1" src="#tex">
-       	    <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation></a-sphere>
+	    <a-sphere color="#FFFFF0" radius="1" position="4 1.5 -4" src="#tex">
+       	    <a-animation attribute="rotation" repeat="indefinite" to="180 90 0"></a-animation></a-sphere>
+    <!-- Added Torus- knot-->
+       	<a-torus color="#43A367" arc="225" radius="5" radius-tubular="0.2" position= "-15 10 -15"></a-torus>
 
 	<!-- Interacting with objects -->
 	<a-event name="mouseenter" scale="2 1 6"></a-event>
