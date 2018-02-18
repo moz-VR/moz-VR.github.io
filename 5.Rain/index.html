@@ -1,0 +1,13 @@
+<html>
+  <head><title>Fog</title>
+    <script src="aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.5/dist/aframe-particle-system-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+    <a-entity position="0 2.25 -5" particle-system="preset: rain"></a-entity>
+    <a-sky src="images/iceland.jpg"></a-sky>
+    <a-sound src="src: url(rain.mp3)" autoplay="true" position="0 2 5"></a-sound>
+	</a-scene>
+  </body>
+</html>
